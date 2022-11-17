@@ -26,7 +26,7 @@ export const HomePage = (): JSX.Element => {
               Bejuco Surf
             </h1>
             <h2 className="text-xl sm:text-3xl text-white font-thin">
-              Surfing never has been this fun
+              Surfing nunca habia sido tan divertido
             </h2>
           </div>
         </div>
@@ -35,22 +35,45 @@ export const HomePage = (): JSX.Element => {
         <div>
           <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3">
             <div className="flex flex-col w-full md:w-3/4 justify-center ">
-              <h2 className="text-2xl mb-3"> Lorem ipsum </h2>
+              <h2 className="text-2xl mb-3">
+                Experimente los descansos perfectos
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                vitae orci odio. Duis sed magna nec lacus laoreet vehicula. In
-                sed massa ut dolor lobortis cursus sit amet tempus leo. Nullam
-                vulputate id odio sit amet varius. Donec justo magna, tristique
-                eu gravida id, maximus ut erat. Cras nec porta purus. Maecenas
-                vel efficitur nulla. Aliquam tempor sem mauris, eget tempus
-                turpis scelerisque nec. Fusce id tellus at ante vestibulum
-                porttitor. Phasellus efficitur rutrum vestibulum. Fusce metus
-                felis, efficitur eget eros eu, luctus luctus lacus. Pellentesque
-                rutrum dictum lorem, sed ornare ex rhoncus sit amet. Nulla
-                facilisi. Donec vitae diam sit amet dolor consequat imperdiet.
-                Maecenas bibendum ullamcorper eleifend. Pellentesque nec augue
-                eget ligula scelerisque pharetra. Pellentesque a lorem mattis,
-                accumsan lectus nec, accumsan sapien. Proin vitae libero quam.
+                Sumérjase en el agua por primera vez y practique remo,
+                apareciendo y montando en indulgente descanso en la playa de
+                Bejuco. Los surfistas más experimentados pueden perfeccionar sus
+                habilidades navegando junto a un instructor experto, aprendiendo
+                a leer las olas de última hora y mejorando la técnica y la
+                forma. Los usuarios de todos los niveles de habilidad pueden
+                tomar el sol en la costa del Pacífico y disfrutar de la
+                seguridad de una experimentada escuela de surf que hace énfasis
+                en la seguridad y la diversión.
+              </p>
+              <ul className="flex flex-col list-disc p-6">
+                <li>
+                  Experiencia única Perfecto para todas las edades y niveles de
+                  destreza
+                </li>
+                <li>
+                  Varias salidas durante el día Reciba consejos útiles de un
+                  habitante de la zona
+                </li>
+                <li>Todo el equipo necesario incluido Guía</li>
+              </ul>
+              <p className="pb-2">
+                <b>Que haremos:</b> Comenzamos con una charla amena del océano,
+                de nuestra posición en la tabla, técnicas para poder surfear y
+                sobre todo estar seguros en el agua. Me gustaría enseñar como
+                puedes mejorar sobre la tabla. En esta zona hay olas secretas
+                que me gustaría mostrar.
+              </p>
+              <p>
+                <b>Clases con Propósito:</b> Creemos en que el deporte es un
+                precursor para alejar a jóvenes de las drogas por medio del
+                deporte enseñamos valores como la disciplina la pasión,
+                perseverancia, los creadores de este contenido damos clases
+                voluntarias a joves de la zona y empleamos a chicos como
+                instructores para asi fortalecer un valor mas, el trabajo.
               </p>
             </div>
             <div className="w-1/4 m-auto">
@@ -68,27 +91,36 @@ export const HomePage = (): JSX.Element => {
       </section>
       <section className=" bg-teal-500">
         <div className="container max-w-5xl mx-auto">
-          <div className="flex flex-col sm:flex-row justify-between py-8">
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded h-full m-auto mb-3">
-              <h3 className=" font-semibold text-lg mb-3">Name</h3>
-              <p className=" font-semibold text-2xl mb-3">$40</p>
-              <p>Descripcion</p>
+          <div className="flex flex-col sm:flex-row justify-between py-8 items-start">
+            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3 h-80 justify-between">
+              <h3 className=" font-semibold text-lg mb-3">Paquete 1</h3>
+              <p className=" font-semibold text-2xl mb-3">$60</p>
+              <p>Paquete basico de un sesion </p>
+              <button className=" bg-cyan-600 w-auto rounded p-3 mt-6">
+                Reserva
+              </button>
             </div>
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded h-full m-auto mb-3">
-              <h3 className=" font-semibold text-lg mb-3">Name</h3>
-              <p className=" font-semibold text-2xl mb-3">$40</p>
-              <p>Descripcion</p>
+            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3  h-80 justify-between">
+              <h3 className=" font-semibold text-lg mb-3">Paquete 2</h3>
+              <p className=" font-semibold text-2xl mb-3">$80</p>
+              <p>Trasporte 10km alrededor de Playa Bejuco Puntarenas</p>
+              <button className=" bg-cyan-600 w-auto rounded p-3 mt-6">
+                Reserva
+              </button>
             </div>
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded h-full m-auto">
-              <h3 className=" font-semibold text-lg mb-3">Name</h3>
-              <p className=" font-semibold text-2xl mb-3">$40</p>
-              <p>Descripcion</p>
+            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded  h-80 justify-between">
+              <h3 className=" font-semibold text-lg mb-3">Paquete 3</h3>
+              <p className=" font-semibold text-2xl mb-3">$400</p>
+              <p>Trasporte Aeropuerto Clases de Surf y hospedaje</p>
+              <button className=" bg-cyan-600 w-auto rounded p-3 mt-6">
+                Reserva
+              </button>
             </div>
           </div>
         </div>
       </section>
       <section className="">
-        <div className=" p-3">
+        <div className=" p-3 max-w-5xl m-auto">
           <div className=" flex flex-col">
             <div className="flex gap-3">
               <div className="w-full">
@@ -142,7 +174,30 @@ export const HomePage = (): JSX.Element => {
           </div>
         </div>
       </section>
-      <section className=" bg-teal-500 h-12"></section>
+      <section className=" bg-teal-500">
+        <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3  max-w-5xl mx-auto ">
+          <div className="flex flex-col w-full md:w-3/4 justify-center ">
+            <h2 className="text-2xl mb-3">Conoce a tu instructor</h2>
+            <p>
+              Hola soy Roberto, un deportista desde el 96, he nadado en muchos
+              lugares en CR y el mundo. He surfeado en diferentes países y soy
+              un local que busca olas y lugares seguros y divertidos. Con 27
+              años de experiencia en el océano, soy la persona indicada, experta
+              para que puedas disfrutar y estar seguro.
+            </p>
+          </div>
+          <div className="w-1/4 m-auto ">
+            <Image
+              src="/assets/images/roberto.jpg"
+              layout="responsive"
+              alt="Roberto instructor"
+              width={594}
+              height={594}
+              className="rounded-full"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 };

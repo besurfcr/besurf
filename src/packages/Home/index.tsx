@@ -96,25 +96,34 @@ export const HomePage = (): JSX.Element => {
               <h3 className=" font-semibold text-lg mb-3">Paquete 1</h3>
               <p className=" font-semibold text-2xl mb-3">$60</p>
               <p>Paquete basico de un sesion </p>
-              <button className=" bg-cyan-600 w-auto rounded p-3 mt-6">
+              <a
+                href="#book"
+                className=" bg-cyan-600 w-auto rounded p-3 mt-6 text-center"
+              >
                 Reserva
-              </button>
+              </a>
             </div>
             <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3  h-80 justify-between m-auto sm:m-0">
               <h3 className=" font-semibold text-lg mb-3">Paquete 2</h3>
               <p className=" font-semibold text-2xl mb-3">$80</p>
               <p>Trasporte 10km alrededor de Playa Bejuco Puntarenas</p>
-              <button className=" bg-cyan-600 w-auto rounded p-3 mt-6">
+              <a
+                href="#book"
+                className=" bg-cyan-600 w-auto rounded p-3 mt-6 text-center"
+              >
                 Reserva
-              </button>
+              </a>
             </div>
             <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded  h-80 justify-between m-auto sm:m-0">
               <h3 className=" font-semibold text-lg mb-3">Paquete 3</h3>
               <p className=" font-semibold text-2xl mb-3">$400</p>
               <p>Trasporte Aeropuerto Clases de Surf y hospedaje</p>
-              <button className=" bg-cyan-600 w-auto rounded p-3 mt-6">
+              <a
+                href="#book"
+                className=" bg-cyan-600 w-auto rounded p-3 mt-6 text-center"
+              >
                 Reserva
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -198,7 +207,7 @@ export const HomePage = (): JSX.Element => {
           </div>
         </div>
       </section>
-      <section className="">
+      <section id="book">
         <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3  max-w-5xl mx-auto ">
           <div className="flex flex-col w-full md:w-3/4 justify-center ">
             <h2 className="text-2xl mb-3 font-bold">Como reservar</h2>

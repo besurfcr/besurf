@@ -92,7 +92,7 @@ export const HomePage = (): JSX.Element => {
       <section className=" bg-teal-500">
         <div className="container max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between py-8 items-start">
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3 h-80 justify-between">
+            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3 h-80 justify-between m-auto sm:m-0">
               <h3 className=" font-semibold text-lg mb-3">Paquete 1</h3>
               <p className=" font-semibold text-2xl mb-3">$60</p>
               <p>Paquete basico de un sesion </p>
@@ -100,7 +100,7 @@ export const HomePage = (): JSX.Element => {
                 Reserva
               </button>
             </div>
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3  h-80 justify-between">
+            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3  h-80 justify-between m-auto sm:m-0">
               <h3 className=" font-semibold text-lg mb-3">Paquete 2</h3>
               <p className=" font-semibold text-2xl mb-3">$80</p>
               <p>Trasporte 10km alrededor de Playa Bejuco Puntarenas</p>
@@ -108,7 +108,7 @@ export const HomePage = (): JSX.Element => {
                 Reserva
               </button>
             </div>
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded  h-80 justify-between">
+            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded  h-80 justify-between m-auto sm:m-0">
               <h3 className=" font-semibold text-lg mb-3">Paquete 3</h3>
               <p className=" font-semibold text-2xl mb-3">$400</p>
               <p>Trasporte Aeropuerto Clases de Surf y hospedaje</p>
@@ -177,7 +177,7 @@ export const HomePage = (): JSX.Element => {
       <section className=" bg-teal-500">
         <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3  max-w-5xl mx-auto ">
           <div className="flex flex-col w-full md:w-3/4 justify-center ">
-            <h2 className="text-2xl mb-3">Conoce a tu instructor</h2>
+            <h2 className="text-2xl mb-3 font-bold">Conoce a tu instructor</h2>
             <p>
               Hola soy Roberto, un deportista desde el 96, he nadado en muchos
               lugares en CR y el mundo. He surfeado en diferentes países y soy
@@ -195,6 +195,28 @@ export const HomePage = (): JSX.Element => {
               height={594}
               className="rounded-full"
             />
+          </div>
+        </div>
+      </section>
+      <section className="">
+        <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3  max-w-5xl mx-auto ">
+          <div className="flex flex-col w-full md:w-3/4 justify-center ">
+            <h2 className="text-2xl mb-3 font-bold">Como reservar</h2>
+            <p className="pb-2">
+              Por cuestiones del clima y oleaje es mejor contactar al instrutor
+              para hacer reservaciones.
+            </p>
+            <p className="pb-2">
+              Email: <span className="font-bold">besurfcr@gmail.com</span>
+            </p>
+            <p className="pb-2">
+              Whatsapp: <a href="tel:88506373">+506 8850-6373</a>
+            </p>
+          </div>
+        </div>
+        <div className=" p-6 bg-teal-500">
+          <div className="font-bold text-2xl sm:text-3xl text-white">
+            BESurf
           </div>
         </div>
       </section>

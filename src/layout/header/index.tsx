@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export const Header = (): JSX.Element => {
@@ -13,15 +15,19 @@ export const Header = (): JSX.Element => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <div className="absolute z-[3] w-full">
-          <div className="container p-6 flex justify-between items-center m-auto">
-            <div className="font-bold text-2xl sm:text-3xl text-white">
+        <div className="absolute z-[3] w-full bg-black bg-opacity-80">
+          <div className="container p-1 flex justify-between items-center m-auto">
+            <div className="font-bold text-2xl sm:text-3xl text-white relative h-10 w-32">
               <a
                 role="button"
                 className=" cursor-pointer"
                 onClick={() => handleNavigation("/")}
               >
-                TresOlas
+                <Image
+                  src="/assets/images/tres-olas-small-logo.png"
+                  alt="Tres Olas logo"
+                  layout="fill"
+                />
               </a>
             </div>
             <div className="flex flex-1 justify-end">
@@ -30,10 +36,16 @@ export const Header = (): JSX.Element => {
                   <li className=" text-xl text-white p-3">
                     <a
                       role="button"
-                      className=" cursor-pointer"
+                      className=" cursor-pointer "
                       onClick={() => handleNavigation("/besurf")}
                     >
-                      Besurf
+                      <div className="relative h-10 w-32">
+                        <Image
+                          src="/assets/images/besurf/besurf-blue-logo.png"
+                          alt="Besurf blue logo"
+                          layout="fill"
+                        />
+                      </div>
                     </a>
                   </li>
                   <li className=" text-xl text-white p-3">
@@ -42,7 +54,13 @@ export const Header = (): JSX.Element => {
                       className=" cursor-pointer"
                       onClick={() => handleNavigation("/octopus")}
                     >
-                      Octopus
+                      <div className="relative h-10 w-24">
+                        <Image
+                          src="/assets/images/octopus/octupus-small-logo.png"
+                          alt="Octopus small logo"
+                          layout="fill"
+                        />
+                      </div>
                     </a>
                   </li>
                 </ul>

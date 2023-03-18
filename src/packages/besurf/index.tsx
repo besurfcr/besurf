@@ -10,183 +10,187 @@ export const BesurfPage = (): JSX.Element => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="relative">
-        <div className="relative flex flex-col m-auto z-[2] text-center h-screen justify-center bg-[url('/assets/images/banner.jpg')] bg-no-repeat bg-center bg-cover">
+        <div className="relative flex flex-col m-auto z-[2] text-center h-screen justify-center bg-[url('/assets/images/besurf/banner-2.jpg')] bg-no-repeat bg-center bg-cover">
           <div className="absolute w-full h-screen bg-black z-[1] opacity-25" />
           <div className="z-[2]">
-            <h1 className="font-bold text-4xl sm:text-6xl mb-5 text-white">
-              Bejuco Surf
-            </h1>
-            <h2 className="text-xl sm:text-3xl text-white font-thin">
+            <div className=" text-center h-[250px] sm:max-w-[575px] relative w-full sm:max-h-[360px] sm:h-[360px] m-auto">
+              <Image
+                src="/assets/images/besurf/besurf_logo.png"
+                alt="besurf logo"
+                layout="fill"
+              />
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl text-white font-thin">
               Surfing nunca habia sido tan divertido
             </h2>
           </div>
         </div>
       </div>
-      <section className="container max-w-5xl mx-auto">
+      <section className="container max-w-[1512] m-auto">
         <div>
-          <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3">
-            <div className="flex flex-col w-full md:w-3/4 justify-center ">
-              <h2 className="text-2xl mb-3">
-                Experimente los descansos perfectos
-              </h2>
-              <p>
-                Sumérjase en el agua por primera vez y practique remo,
-                apareciendo y montando en indulgente descanso en la playa de
-                Bejuco. Los surfistas más experimentados pueden perfeccionar sus
-                habilidades navegando junto a un instructor experto, aprendiendo
-                a leer las olas de última hora y mejorando la técnica y la
-                forma. Los usuarios de todos los niveles de habilidad pueden
-                tomar el sol en la costa del Pacífico y disfrutar de la
-                seguridad de una experimentada escuela de surf que hace énfasis
-                en la seguridad y la diversión.
-              </p>
-              <ul className="flex flex-col list-disc p-6">
-                <li>
-                  Experiencia única Perfecto para todas las edades y niveles de
-                  destreza
-                </li>
-                <li>
-                  Varias salidas durante el día Reciba consejos útiles de un
-                  habitante de la zona
-                </li>
-                <li>Todo el equipo necesario incluido Guía</li>
-              </ul>
-              <p className="pb-2">
-                <b>Que haremos:</b> Comenzamos con una charla amena del océano,
-                de nuestra posición en la tabla, técnicas para poder surfear y
-                sobre todo estar seguros en el agua. Me gustaría enseñar como
-                puedes mejorar sobre la tabla. En esta zona hay olas secretas
-                que me gustaría mostrar.
-              </p>
-              <p>
-                <b>Clases con Propósito:</b> Creemos en que el deporte es un
-                precursor para alejar a jóvenes de las drogas por medio del
-                deporte enseñamos valores como la disciplina la pasión,
-                perseverancia, los creadores de este contenido damos clases
-                voluntarias a joves de la zona y empleamos a chicos como
-                instructores para asi fortalecer un valor mas, el trabajo.
-              </p>
+          <div className="py-16 flex flex-col lg:flex-row gap-3.5 p-3">
+            <div className="flex flex-col w-full lg:w-2/4 justify-center text-[#818181] gap-10">
+              <div className=" flex flex-col gap-5">
+                <h2 className="text-2xl mb-3 text-[#02685F]">
+                  Experimente los descansos perfectos
+                </h2>
+                <p className="text-lg">
+                  Sumérjase en el agua por primera vez y practique remo,
+                  apareciendo y montando en indulgente descanso en la playa de
+                  Bejuco. Los surfistas más experimentados pueden perfeccionar
+                  sus habilidades navegando junto a un instructor experto,
+                  aprendiendo a leer las olas de última hora y mejorando la
+                  técnica y la forma. Los usuarios de todos los niveles de
+                  habilidad pueden tomar el sol en la costa del Pacífico y
+                  disfrutar de la seguridad de una experimentada escuela de surf
+                  que hace énfasis en la seguridad y la diversión.
+                </p>
+                <ul className="flex flex-col list-disc p-6 text-lg gap-5">
+                  <li>
+                    Experiencia única Perfecto para todas las edades y niveles
+                    de destreza.
+                  </li>
+                  <li>
+                    Varias salidas durante el día Reciba consejos útiles de un
+                    habitante de la zona
+                  </li>
+                  <li>Todo el equipo necesario incluido Guía</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="pb-5 text-xl">
+                  <b className="text-[#02685F]">¿Qué haremos?</b>
+                </p>
+                <p className="pb-2 text-lg">
+                  Comenzamos con una charla amena del océano, de nuestra
+                  posición en la tabla, técnicas para poder surfear y sobre todo
+                  estar seguros en el agua. Me gustaría enseñar como puedes
+                  mejorar sobre la tabla. En esta zona hay olas secretas que me
+                  gustaría mostrar.
+                </p>
+              </div>
+              <div>
+                <p className="pb-5 text-xl">
+                  <b className="text-[#02685F]">Clases con Propósito</b>
+                </p>
+                <p className="text-lg">
+                  Creemos en que el deporte es un precursor para alejar a
+                  jóvenes de las drogas por medio del deporte enseñamos valores
+                  como la disciplina la pasión, perseverancia, los creadores de
+                  este contenido damos clases voluntarias a joves de la zona y
+                  empleamos a chicos como instructores para asi fortalecer un
+                  valor mas, el trabajo.
+                </p>
+              </div>
             </div>
-            <div className="w-1/4 m-auto">
-              <Image
-                src="/assets/images/surfTable.png"
-                layout="responsive"
-                alt="Surfing table"
-                width={1405}
-                height={5000}
-              />
+            <div className="w-full lg:w-2/4 m-auto max-h-[856]">
+              <div className="pb-3">
+                <div className="w-full bg-[url('/assets/images/besurf/image-1.jpg')] bg-no-repeat bg-center bg-cover h-[447px]" />
+              </div>
+              <div className="flex gap-3 h-[393px]">
+                <div className="w-full bg-[url('/assets/images/besurf/image-3.jpg')] bg-no-repeat bg-center bg-cover " />
+                <div className="w-full bg-[url('/assets/images/besurf/image-2.jpg')] bg-no-repeat bg-center bg-cover " />
+              </div>
             </div>
           </div>
         </div>
         <div></div>
       </section>
-      <section className=" bg-teal-500">
-        <div className="container max-w-5xl mx-auto">
-          <div className="flex flex-col sm:flex-row justify-between py-8 items-start">
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3 h-80 justify-between m-auto sm:m-0">
-              <h3 className=" font-semibold text-lg mb-3">Paquete 1</h3>
-              <p className=" font-semibold text-2xl mb-3">$60</p>
-              <p>Paquete basico de un sesion </p>
-              <a
-                href="#book"
-                className=" bg-cyan-600 w-auto rounded p-3 mt-6 text-center"
-              >
-                Reserva
-              </a>
-            </div>
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded mb-3  h-80 justify-between m-auto sm:m-0">
-              <h3 className=" font-semibold text-lg mb-3">Paquete 2</h3>
-              <p className=" font-semibold text-2xl mb-3">$80</p>
-              <p>Trasporte 10km alrededor de Playa Bejuco Puntarenas</p>
-              <a
-                href="#book"
-                className=" bg-cyan-600 w-auto rounded p-3 mt-6 text-center"
-              >
-                Reserva
-              </a>
-            </div>
-            <div className=" flex flex-col p-10 bg-white max-w-xs w-full rounded  h-80 justify-between m-auto sm:m-0">
-              <h3 className=" font-semibold text-lg mb-3">Paquete 3</h3>
-              <p className=" font-semibold text-2xl mb-3">$400</p>
-              <p>Trasporte Aeropuerto Clases de Surf y hospedaje</p>
-              <a
-                href="#book"
-                className=" bg-cyan-600 w-auto rounded p-3 mt-6 text-center"
-              >
-                Reserva
-              </a>
-            </div>
+      <section className=" bg-[#FBFBFB]">
+        <div className="container max-w-[1512] m-auto py-16 p-3">
+          <div className="w-full text-center mb-11">
+            <h2 className="text-[#02685F] text-4xl">
+              <b>Nuestros Paquetes</b>
+            </h2>
           </div>
-        </div>
-      </section>
-      <section className="">
-        <div className=" p-3 max-w-5xl m-auto">
-          <div className=" flex flex-col">
-            <div className="flex gap-3">
-              <div className="w-full">
-                <Image
-                  src="/assets/images/gallery/gallery-1.jpg"
-                  alt="Surf lessons image 1"
-                  layout="responsive"
-                  width={4160}
-                  height={6240}
-                />
+
+          <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-4">
+            <div className=" flex flex-col p-5 bg-white max-w-md w-full rounded-md  justify-between m-auto sm:m-0 shadow-md h-[544px]">
+              <div className="flex flex-row justify-between items-center mb-5">
+                <h3 className=" font-semibold text-xl text-[#02685F] mb-3">
+                  Paquete Básico
+                </h3>
+                <p className=" font-semibold text-[40px] text-[#81B5B1] mb-3">
+                  $60
+                </p>
               </div>
-              <div className="w-full">
-                <Image
-                  src="/assets/images/gallery/gallery-2.jpg"
-                  alt="Surf lessons image 2"
-                  layout="responsive"
-                  width={4160}
-                  height={6240}
-                />
+              <div className="mb-5">
+                <div className=" w-full bg-[url('/assets/images/besurf/image-3.jpg')] bg-no-repeat bg-center bg-cover h-52 rounded" />
+              </div>
+              <div className="mb-5 h-20">
+                <p className="text-[#818181]">Paquete basico de un sesion </p>
+              </div>
+              <div className="flex flex-row justify-center">
+                <a
+                  href="#book"
+                  className=" bg-[#02685F] w-56 rounded p-3 text-center text-white text-lg uppercase"
+                >
+                  Reserva
+                </a>
               </div>
             </div>
-            <div className="w-full py-3">
-              <Image
-                src="/assets/images/gallery/gallery-3.jpg"
-                alt="Surf lessons image 3"
-                layout="responsive"
-                width={6240}
-                height={4160}
-              />
-            </div>
-            <div className="flex gap-3">
-              <div className="w-full">
-                <Image
-                  src="/assets/images/gallery/gallery-4.jpg"
-                  alt="Surf lessons image 4"
-                  layout="responsive"
-                  width={3896}
-                  height={5844}
-                />
+            <div className=" flex flex-col p-5 bg-white max-w-md w-full rounded-md justify-between m-auto sm:m-0 shadow-md h-[544px]">
+              <div className="flex flex-row justify-between items-center mb-5">
+                <h3 className=" font-semibold text-xl text-[#02685F] mb-3">
+                  Paquete 10k Puntarenas
+                </h3>
+                <p className=" font-semibold text-[40px] text-[#81B5B1] mb-3">
+                  $80
+                </p>
               </div>
-              <div className="w-full">
-                <Image
-                  src="/assets/images/gallery/gallery-5.jpg"
-                  alt="Surf lessons image 5"
-                  layout="responsive"
-                  width={4160}
-                  height={6240}
-                />
+              <div className="mb-5">
+                <div className=" w-full bg-[url('/assets/images/besurf/image-3.jpg')] bg-no-repeat bg-center bg-cover h-52 rounded" />
+              </div>
+              <div className="mb-5 h-20">
+                <p className="text-[#818181]">
+                  Trasporte 10km alrededor de Playa Bejuco Puntarenas.
+                </p>
+              </div>
+              <div className="flex flex-row justify-center">
+                <a
+                  href="#book"
+                  className=" bg-[#02685F] w-56 rounded p-3 text-center text-white text-lg uppercase"
+                >
+                  Reserva
+                </a>
+              </div>
+            </div>
+            <div className=" flex flex-col p-5 bg-white max-w-md w-full rounded-md justify-between m-auto sm:m-0 shadow-md h-[544px]">
+              <div className="flex flex-row justify-between items-center mb-5">
+                <h3 className=" font-semibold text-xl text-[#02685F] mb-3">
+                  Paquete Premium
+                </h3>
+                <p className=" font-semibold text-[40px] text-[#81B5B1] mb-3">
+                  $400
+                </p>
+              </div>
+              <div className="mb-5">
+                <div className=" w-full bg-[url('/assets/images/besurf/image-3.jpg')] bg-no-repeat bg-center bg-cover h-52 rounded" />
+              </div>
+              <div className=" mb-5 px-5">
+                <ul className="text-[#818181] list-disc flex flex-col gap-2">
+                  <li>Trasporte Aeropuerto</li>
+                  <li>Clases de Surf </li>
+                  <li>Hospedaje</li>
+                </ul>
+              </div>
+              <div className="flex flex-row justify-center">
+                <a
+                  href="#book"
+                  className=" bg-[#02685F] w-56 rounded p-3 text-center text-white text-lg uppercase"
+                >
+                  Reserva
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className=" bg-teal-500">
-        <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3  max-w-5xl mx-auto ">
-          <div className="flex flex-col w-full md:w-3/4 justify-center ">
-            <h2 className="text-2xl mb-3 font-bold">Conoce a tu instructor</h2>
-            <p>
-              Hola soy Roberto, un deportista desde el 96, he nadado en muchos
-              lugares en CR y el mundo. He surfeado en diferentes países y soy
-              un local que busca olas y lugares seguros y divertidos. Con 27
-              años de experiencia en el océano, soy la persona indicada, experta
-              para que puedas disfrutar y estar seguro.
-            </p>
-          </div>
-          <div className="w-1/4 m-auto ">
+      <section>
+        <div className="py-32 flex flex-col md:flex-row gap-6 p-3  max-w-5xl mx-auto ">
+          <div className="w-2/4 sm:w-1/4 m-auto ">
             <Image
               src="/assets/images/roberto.jpg"
               layout="responsive"
@@ -196,12 +200,24 @@ export const BesurfPage = (): JSX.Element => {
               className="rounded-full"
             />
           </div>
+          <div className="flex flex-col w-full md:w-3/4 justify-center ">
+            <h2 className="text-[#02685F] text-4xl mb-5 text-center sm:text-start">
+              <b>Conoce a Roberto nuestro instructor</b>
+            </h2>
+            <p className="text-[#818181]">
+              Hola soy Roberto, un deportista desde el 96, he nadado en muchos
+              lugares en CR y el mundo. He surfeado en diferentes países y soy
+              un local que busca olas y lugares seguros y divertidos. Con 27
+              años de experiencia en el océano, soy la persona indicada, experta
+              para que puedas disfrutar y estar seguro.
+            </p>
+          </div>
         </div>
       </section>
-      <section id="book">
-        <div className="py-8 flex flex-col md:flex-row gap-3.5 p-3  max-w-5xl mx-auto ">
-          <div className="flex flex-col w-full md:w-3/4 justify-center ">
-            <h2 className="text-2xl mb-3 font-bold">Como reservar</h2>
+      <section id="book" className="bg-[#02685F]">
+        <div className="flex flex-col md:flex-row container max-w-[1512] m-auto py-16 p-5 ">
+          <div className="flex flex-col w-full md:w-3/4 justify-center text-white">
+            <h2 className="font-bold text-4xl mb-11">¿Como Reservar?</h2>
             <p className="pb-2">
               Por cuestiones del clima y oleaje es mejor contactar al instrutor
               para hacer reservaciones.
@@ -212,11 +228,6 @@ export const BesurfPage = (): JSX.Element => {
             <p className="pb-2">
               Whatsapp: <a href="tel:88506373">+506 8850-6373</a>
             </p>
-          </div>
-        </div>
-        <div className=" p-6 bg-teal-500">
-          <div className="font-bold text-2xl sm:text-3xl text-white">
-            BESurf
           </div>
         </div>
       </section>
